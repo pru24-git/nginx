@@ -1,15 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Simple Image Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <style>
+        body {
+            /* Sets the overall background color of the page */
+            background-color: #e0f7fa; 
+            
+            /* Centers the content on the screen */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            text-align: center;
+        }
+
+        img {
+            /* Ensures the image doesn't overflow small screens */
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Welcome to My Webpage</h1>
-    <p>Below is a simple image example:</p>
-
-    <!-- The img tag embeds the image onto the page -->
-    <img src="mountain.jpg" alt="A beautiful random placeholder image" width="400" height="300">
+    <div class="container">
+        <h2>My Simple Webpage</h2>
+        <!-- Replace the src URL with your own image file path or URL -->
+        <img src="https://picsum.photos" alt="A beautiful placeholder image">
+    </div>
 
 </body>
 </html>
